@@ -1,26 +1,26 @@
 @font-face {
 	font-family: "AppleGar";
-	src: url(/assets/fonts/AppleGaramond.ttf);
+	src: url(./assets/fonts/AppleGaramond.ttf);
 }
 
 @font-face {
     font-family: "AppleGarLight";
-    src: url(/assets/fonts/AppleGaramond-Light.ttf);
+    src: url(./assets/fonts/AppleGaramond-Light.ttf);
 }
 
 @font-face {
     font-family: "AppleGarBold";
-    src: url(/assets/fonts/AppleGaramond-Bold.ttf);
+    src: url(./assets/fonts/AppleGaramond-Bold.ttf);
 }
 
 @font-face {
     font-family: "TitlesReg";
-    src: url(/assets/fonts/TT\ Ramillas\ Trial\ Regular.ttf);
+    src: url(./assets/fonts/TT\ Ramillas\ Trial\ Regular.ttf);
 }
 
 @font-face {
     font-family: "TitlesBold";
-    src: url(/assets/fonts/TT\ Ramillas\ Trial\ Bold.ttf);
+    src: url(./assets/fonts/TT\ Ramillas\ Trial\ Bold.ttf);
 }
 
 a {
