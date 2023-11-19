@@ -10,8 +10,8 @@
     <link href="./css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="px-5 pt-3">
-        <div class="titlesColor header w-100 d-flex justify-content-between">
+    <div class="d-none d-md-block px-5 pt-3">
+        <div class="d-none d-md-flex titlesColor header w-100 justify-content-between">
             <div class="fs-5 textFont"><a href="./index.html">Home</div></a>
             <div class="fs-5 textFont"><a href="./programma.html"><u>Programma</u></a></div>
             <div class="fs-5 textFont"><a href="./rsvp.html">RSVP</a></div>
@@ -26,41 +26,54 @@
             <div class="fs-5 textFont"><a href="./testimoni.html">Testimoni</a></div>
             <div class="fs-5 textFont"><a href="./viaggio.html">Viaggio di nozze</a></div>
         </div>
-        <div class="mainHome mt-5">
-            <div class="d-flex justify-content-center titlesFont">
-                <h1 class="titlesFontB"><b>Pronti alla Maratona?</b></h1>
-            </div>
+    </div>
+    <div class="d-block d-md-none py-3 px-3" style="border-bottom: 1px solid #561E12;">
+        <div class="d-flex w-100 justify-content-center align-items-center" onclick="toggleVisibility()">
+            <img src="./assets/images/icons/menu.svg" >
+        </div>
+    </div>
+    <div class="position-asbolute mobHead top-0">
+        <div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./index.html">Home</div></a>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./programma.html"><u>Programma</u></a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./rsvp.html">RSVP</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./info1.html">Info 1</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./info2.html">Info 2</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./info3.html">Info 3</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./testimoni.html">Testimoni</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./viaggio.html">Viaggio di nozze</a></div>
         </div>
     </div>
 
-    <div class="mt-5 d-flex justify-content-center">
-        <div class="col-12 col-md-6 textColor">
-            <div class="cardBlock position-relative pb-3" style="background-color: #fff;">
-                <div class="position-absolute m-3 top-0 start-0 mb-4 circleNumber d-flex align-items-center justify-content-center"><img src="./assets/images/icons/clock-hour-5.svg" style="width: 50%;"></div>
-                <div class="position-absolute m-3 top-0 end-0 mb-4 circleNumber d-flex align-items-center justify-content-center"><img src="./assets/images/icons/location.svg" style="width: 50%;"></div>
-                <h3 class="text-center textColor">
-                    Sabato 29 giugno 2024<br>
-                    Borgo Fregnano<br>
-                    Via Baccagnano 37 - Brisighella<br>
-
-                </h3>
-            </div>
+    <div class="mainHome mt-5">
+        <div class="d-flex justify-content-center titlesFont">
+            <h1 class="titlesFontB"><b>Pronti alla Maratona?</b></h1>
         </div>
-    </div>
-
-    <div class="vw-100" style="margin-top: -5rem; z-index: -10;">
-        <div style="aspect-ratio: 2/1;">
-        <img src="./assets/images/Group 12.png" class="fitImg"></div>
     </div>
 
     <div class="px-5 pt-3">
 
-
-
+        <div class="mt-5 d-flex justify-content-center">
+            <div class="col-12 col-md-6 textColor">
+                <div class="cardBlock position-relative pb-3" style="background-color: #fff;">
+                    <div class="position-absolute m-3 top-0 start-0 mb-4 circleNumber d-flex align-items-center justify-content-center"><img src="./assets/images/icons/clock-hour-5.svg" style="width: 50%;"></div>
+                    <div class="position-absolute m-3 top-0 end-0 mb-4 circleNumber d-flex align-items-center justify-content-center"><img src="./assets/images/icons/location.svg" style="width: 50%;"></div>
+                    <h3 class="text-center textColor">
+                        Sabato 29 giugno 2024<br>
+                        Borgo Fregnano<br>
+                        Via Baccagnano 37 - Brisighella<br>
+    
+                    </h3>
+                </div>
+            </div>
+        </div>
         <div class="end"></div>
 
     </div>
-
+    <div class="vw-100" style="margin-top: -5rem; z-index: -10;">
+        <div style="aspect-ratio: 2/1;">
+        <img src="./assets/images/Group 12.png" class="fitImg"></div>
+    </div>
 
     <footer>
         <div class="w-100 d-flex justify-content-center align-items-center gap-3">
@@ -69,5 +82,20 @@
             <h2>Luca</h2>
         </div>
     </footer>
+
+    <script>
+        function toggleVisibility() {
+            var hiddenContent = document.querySelector(".mobHead");
+            if (hiddenContent.style.visibility === "hidden") {
+                hiddenContent.style.opacity = 1;
+                hiddenContent.style.visibility = "visible";
+                hiddenContent.style.display = "block";
+            } else {
+                hiddenContent.style.opacity = 0;
+                hiddenContent.style.visibility = "hidden";
+                hiddenContent.style.display = "none";
+            }
+        }
+        </script>
 </body>
 </html>

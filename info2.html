@@ -10,8 +10,8 @@
     <link href="./css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="px-5 pt-3">
-        <div class="titlesColor header w-100 d-flex justify-content-between">
+    <div class="d-none d-md-block px-5 pt-3">
+        <div class="d-none d-md-flex titlesColor header w-100 justify-content-between">
             <div class="fs-5 textFont"><a href="./index.html">Home</div></a>
             <div class="fs-5 textFont"><a href="./programma.html">Programma</a></div>
             <div class="fs-5 textFont"><a href="./rsvp.html">RSVP</a></div>
@@ -26,17 +26,35 @@
             <div class="fs-5 textFont"><a href="./testimoni.html">Testimoni</a></div>
             <div class="fs-5 textFont"><a href="./viaggio.html">Viaggio di nozze</a></div>
         </div>
-        <div class="mainHome mt-5">
-            <div class="d-flex flex-column text-center titlesFont titlesColor">
-                <h1>Nessun <span class="titlesFontB">Dorma</span></h1>
-                <h5 class="d-flex justify-content-center titlesColor text-center">
-                    <div style="max-width:60%;">
-                        <h5 >
-                            (senza Booking o Airbnb!) E non dimenticare: quando prenoti, questa è la parola d’ordine: <span class="titlesFontB">«Matrimonio di Giulia&Luca»</span>
-                        </h5>
-                    </div>
-                </h5>
-            </div>
+    </div>
+    <div class="d-block d-md-none py-3 px-3" style="border-bottom: 1px solid #561E12;">
+        <div class="d-flex w-100 justify-content-center align-items-center" onclick="toggleVisibility()">
+            <img src="./assets/images/icons/menu.svg" >
+        </div>
+    </div>
+    <div class="position-asbolute mobHead top-0">
+        <div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./index.html">Home</div></a>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./programma.html">Programma</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./rsvp.html">RSVP</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./info1.html">Info 1</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./info2.html"><u>Info 2</u></a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./info3.html">Info 3</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./testimoni.html">Testimoni</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./viaggio.html">Viaggio di nozze</a></div>
+        </div>
+    </div>
+
+    <div class="mainHome mt-5">
+        <div class="d-flex flex-column text-center titlesFont titlesColor">
+            <h1 class="titlesFont">Nessun <span class="titlesFontB">Dorma</span></h1>
+            <h5 class="d-flex justify-content-center titlesColor text-center">
+                <div style="max-width:80%;">
+                    <h5 class="titlesFont">
+                        (senza Booking o Airbnb!) E non dimenticare: quando prenoti, questa è la parola d’ordine: <span class="titlesFontB">«Matrimonio di Giulia&Luca»</span>
+                    </h5>
+                </div>
+            </h5>
         </div>
     </div>
 
@@ -45,8 +63,8 @@
         <img src="./assets/images/Rectangle 12.png" class="fitImg"></div>
     </div>
     
-    <div class="px-5 pt-3 ">
-
+    <div class="px-md-5 px-3 pt-3 ">
+        
             <div class="mt-5 d-flex flex-column justify-content-center titlesColor text-center textColor">
                 <h1 class="textColor">Navette</h1>
                 <h5 class="d-flex justify-content-center titlesColor text-center textColor">
@@ -63,16 +81,16 @@
                     <div class="cardBlock pb-3">
                         <div class="position-absolute mb-4 circleText">Andata</div>
                         <div style="margin-top: 5rem;" class="row d-flex align-items-baseline">
-                            <div class="col-4">
+                            <div class="col-md-4 col-12">
                                 <h1 class="textColor lh-1"><span style="font-size: 1rem">da</span> Brisighella <br>
                                     <span style="font-size: 1rem">a</span>  Borgo Fregnano
                                 </h1>              
                             </div>
-                            <div class="col-4 ">
+                            <div class="col-md-4 col-12 ">
                                 <h1 class="textColor lh-1">Piazza Armando Diaz 12</h1>  
                                                           
                             </div>
-                            <div class="col-4 ">
+                            <div class="col-md-4 col-12 ">
                                 <div class="d-flex gap-4">
                                     <h1 class="textColor lh-1">16:30</h1>
                                         <div style="font-size: 1rem" class="lh-1">
@@ -91,16 +109,16 @@
                     <div class="cardBlock pb-3">
                         <div class="position-absolute mb-4 circleText">Ritorno</div>
                         <div style="margin-top: 5rem;" class=" row">
-                            <div class="col-4">
+                            <div class="col-md-4 col-12">
                                 <h1 class="textColor lh-1"><span style="font-size: 1rem">da</span> Borgo Fregnano <br>
                                     <span style="font-size: 1rem">a</span>  Brisighella
                                 </h1>              
                             </div>
-                            <div class="col-4 ">
+                            <div class="col-md-4 col-12 ">
                                 <h1 class="textColor lh-1">Piazza Armando Diaz 12</h1>  
                                                           
                             </div>
-                            <div class="col-4 d-flex flex-column">
+                            <div class="col-md-4 col-12 d-flex flex-column">
                                 <div class="d-flex gap-4">
                                     <h1 class="textColor lh-1">2:00</h1>
                                         <div style="font-size: 1rem" class="lh-1">
@@ -134,7 +152,7 @@
 
             <div class="mt-3">
                 <div class="d-flex row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 mb-4 mb-md-0">
                         <div class="cardBlock d-flex justify-content-center align-items-center">
                             <h2 class="lh-1 textColor"><b>+39 054622502</b></h2>
                         </div>
@@ -156,5 +174,20 @@
             <h2>Luca</h2>
         </div>
     </footer>
+
+    <script>
+        function toggleVisibility() {
+            var hiddenContent = document.querySelector(".mobHead");
+            if (hiddenContent.style.visibility === "hidden") {
+                hiddenContent.style.opacity = 1;
+                hiddenContent.style.visibility = "visible";
+                hiddenContent.style.display = "block";
+            } else {
+                hiddenContent.style.opacity = 0;
+                hiddenContent.style.visibility = "hidden";
+                hiddenContent.style.display = "none";
+            }
+        }
+        </script>
 </body>
 </html>

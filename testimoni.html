@@ -17,6 +17,12 @@
       aspect-ratio: 8/3;
     }
 
+    @media only screen and (max-width: 720px) {
+        swiper-container {
+            aspect-ratio: 8/7;
+        }
+    }
+
     .newsCaption {
         position: absolute;
         top: auto;
@@ -73,18 +79,18 @@
         transition: transform 0.4s, opacity 0.1s, -webkit-transform 0.4s;
     }
 
-
     swiper-slide img {
       display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
+
 </style>
 
 <body>
-    <div class="px-5 pt-3">
-        <div class="titlesColor header w-100 d-flex justify-content-between">
+    <div class="d-none d-md-block px-5 pt-3">
+        <div class="d-none d-md-flex titlesColor header w-100 justify-content-between">
             <div class="fs-5 textFont"><a href="./index.html">Home</div></a>
             <div class="fs-5 textFont"><a href="./programma.html">Programma</a></div>
             <div class="fs-5 textFont"><a href="./rsvp.html">RSVP</a></div>
@@ -99,9 +105,28 @@
             <div class="fs-5 textFont"><a href="./testimoni.html"><u>Testimoni</u></a></div>
             <div class="fs-5 textFont"><a href="./viaggio.html">Viaggio di nozze</a></div>
         </div>
+    </div>
+    <div class="d-block d-md-none py-3 px-3" style="border-bottom: 1px solid #561E12;">
+        <div class="d-flex w-100 justify-content-center align-items-center" onclick="toggleVisibility()">
+            <img src="./assets/images/icons/menu.svg" >
+        </div>
+    </div>
+    <div class="position-asbolute mobHead top-0">
+        <div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./index.html">Home</div></a>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./programma.html">Programma</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./rsvp.html">RSVP</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./info1.html">Info 1</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./info2.html">Info 2</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./info3.html">Info 3</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./testimoni.html"><u>Testimoni</u></a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./viaggio.html">Viaggio di nozze</a></div>
+        </div>
+    </div>
+    <div class="px-3 pt-3">
         <div class="mainHome mt-5">
             <div class="d-flex flex-column text-center titlesFont titlesColor">
-                <h1>Ad ogni coppia felice, i suoi <span class="titlesFontB">Supereroi!</span></h1>
+                <h1 class="titlesFont">Ad ogni coppia felice, i suoi <span class="titlesFontB">Supereroi!</span></h1>
             </div>
         </div>
     </div>
@@ -220,6 +245,21 @@
             <h2>Luca</h2>
         </div>
     </footer>
+
+    <script>
+        function toggleVisibility() {
+            var hiddenContent = document.querySelector(".mobHead");
+            if (hiddenContent.style.visibility === "hidden") {
+                hiddenContent.style.opacity = 1;
+                hiddenContent.style.visibility = "visible";
+                hiddenContent.style.display = "block";
+            } else {
+                hiddenContent.style.opacity = 0;
+                hiddenContent.style.visibility = "hidden";
+                hiddenContent.style.display = "none";
+            }
+        }
+        </script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </body>

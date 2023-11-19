@@ -10,8 +10,8 @@
     <link href="./css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="px-5 pt-3">
-        <div class="titlesColor header w-100 d-flex justify-content-between">
+    <div class="d-none d-md-block px-5 pt-3">
+        <div class="d-none d-md-flex titlesColor header w-100 justify-content-between">
             <div class="fs-5 textFont"><a href="./index.html">Home</div></a>
             <div class="fs-5 textFont"><a href="./programma.html">Programma</a></div>
             <div class="fs-5 textFont"><a href="./rsvp.html">RSVP</a></div>
@@ -26,11 +26,30 @@
             <div class="fs-5 textFont"><a href="./testimoni.html">Testimoni</a></div>
             <div class="fs-5 textFont"><a href="./viaggio.html">Viaggio di nozze</a></div>
         </div>
+    </div>
+    <div class="d-block d-md-none py-3 px-3" style="border-bottom: 1px solid #561E12;">
+        <div class="d-flex w-100 justify-content-center align-items-center" onclick="toggleVisibility()">
+            <img src="./assets/images/icons/menu.svg" >
+        </div>
+    </div>
+    <div class="position-asbolute mobHead top-0">
+        <div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./index.html">Home</div></a>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./programma.html">Programma</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./rsvp.html">RSVP</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./info1.html"><u>Info 1</u></a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./info2.html">Info 2</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./info3.html">Info 3</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./testimoni.html">Testimoni</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./viaggio.html">Viaggio di nozze</a></div>
+        </div>
+    </div>
+    <div class="px-md-5 px-2">
         <div class="mainHome mt-5">
             <div class="d-flex flex-column text-center titlesFont titlesColor">
                 <img src="./assets/images/footerDog.png" style="max-height: 30vh; width: auto; object-fit: contain;">
-                <h1>Tutte le strade portano a <span class="titlesFontB">Borgo Fregnano</span></h1>
-                <h5><span class="titlesFontB">(anche senza Google Maps!)</span></h5>
+                <h1 class="titlesFont">Tutte le strade portano a <span class="titlesFontB">Borgo Fregnano</span></h1>
+                <h5><span class="titlesFont">(anche senza Google Maps!)</span></h5>
             </div>
 
             <div class="px-2 mt-5">
@@ -51,7 +70,7 @@
                     </div>
                 </div>
                 <div class="row mt-4">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 mb-4 mb-md-0">
                         <div class="cardBlock">
                             <h1 class="textColor titlesFontB mb-3">Treno</h1>
                             <div class="lh-sm">
@@ -88,5 +107,20 @@
             <h2>Luca</h2>
         </div>
     </footer>
+
+    <script>
+        function toggleVisibility() {
+            var hiddenContent = document.querySelector(".mobHead");
+            if (hiddenContent.style.visibility === "hidden") {
+                hiddenContent.style.opacity = 1;
+                hiddenContent.style.visibility = "visible";
+                hiddenContent.style.display = "block";
+            } else {
+                hiddenContent.style.opacity = 0;
+                hiddenContent.style.visibility = "hidden";
+                hiddenContent.style.display = "none";
+            }
+        }
+        </script>
 </body>
 </html>

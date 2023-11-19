@@ -10,8 +10,8 @@
     <link href="./css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="px-5 pt-3">
-        <div class="titlesColor header w-100 d-flex justify-content-between">
+    <div class="d-none d-md-block px-5 pt-3">
+        <div class="d-none d-md-flex titlesColor header w-100 justify-content-between">
             <div class="fs-5 textFont"><a href="./index.html">Home</div></a>
             <div class="fs-5 textFont"><a href="./programma.html">Programma</a></div>
             <div class="fs-5 textFont"><a href="./rsvp.html">RSVP</a></div>
@@ -26,232 +26,247 @@
             <div class="fs-5 textFont"><a href="./testimoni.html">Testimoni</a></div>
             <div class="fs-5 textFont"><a href="./viaggio.html">Viaggio di nozze</a></div>
         </div>
-        <div class="mainHome mt-5">
-            <div class="d-flex flex-column text-center titlesFont titlesColor">
-                <h1><span class="titlesFontB">Altre informazioni (in)utili</span></h1>
-            </div>
+    </div>
+    <div class="d-block d-md-none py-3 px-3" style="border-bottom: 1px solid #561E12;">
+        <div class="d-flex w-100 justify-content-center align-items-center" onclick="toggleVisibility()">
+            <img src="./assets/images/icons/menu.svg" >
+        </div>
+    </div>
+    <div class="position-asbolute mobHead top-0">
+        <div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./index.html">Home</div></a>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./programma.html">Programma</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./rsvp.html">RSVP</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./info1.html">Info 1</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./info2.html">Info 2</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./info3.html"><u>Info 3</u></a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./testimoni.html">Testimoni</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./viaggio.html">Viaggio di nozze</a></div>
+        </div>
+    </div>
+    <div class="mainHome mt-5">
+        <div class="d-flex flex-column text-center titlesFont titlesColor">
+            <h1><span class="titlesFontB">Altre informazioni (in)utili</span></h1>
+        </div>
 
-            <div class="px-5 mt-5">
-                <div class="px-2 mt-5">
-                    <div class="row w-100 textColor">
-                        <div class="col-12 col-md-4">
-                            <h1 class="textColor">FOTO</h1>
-                            <h5>
-                                Se ti va, condividi <b><u>qui</u></b> le tue foto scattate durante il matrimonio!
-                            </h5>
+        <div class="px-3 mt-5">
+            <div class="row w-100 textColor">
+                <div class="col-12 col-md-4">
+                    <h1 class="textColor text-center text-md-start">FOTO</h1>
+                    <h5 class="text-center text-md-start">
+                        Se ti va, condividi <b><u>qui</u></b> le tue foto scattate durante il matrimonio!
+                    </h5>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h1 class="textColor text-center text-md-start">PARCHEGGIO</h1>
+                    <h5 class="text-center text-md-start">
+                        Borgo Fregnano è dotato di un grande parcheggio esterno dove puoi lasciare gratuitamente la tua auto.
+                    </h5>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h1 class="textColor text-center text-md-start">OUTFIT</h1>
+                    <h5 class="text-center text-md-start">
+                        Sconsigliamo alle donne di indossare tacchi sottili ed eccessivamente alti. 
+                    </h5>
+                </div>
+                
+            </div>
+            <div class="mt-5 d-flex row w-100 justify-content-center">
+                <div class="col-12 col-md-6 pe-0 me-0 textColor mb-4 mb-md-0">
+                    <div class="cardBlock pb-3">
+                        <div class="mb-4 circleNumber">01</div>
+                        <h1 class="textColor titlesFontB mb-3">BABY-SITTER</h1>
+                        <div class="div d-flex justify-content-between align-items-baseline">
+                            <div class="d-flex align-items-baseline">
+                                <h1 class="textColor">1.</h1>
+                                <h3 class="ms-3">Tata Matilda</h3>
+                            </div>
+                            <h6>+39 123 45678</h6>
                         </div>
-                        <div class="col-12 col-md-4">
-                            <h1 class="textColor">PARCHEGGIO</h1>
-                            <h5>
-                                Borgo Fregnano è dotato di un grande parcheggio esterno dove puoi lasciare gratuitamente la tua auto.
-                            </h5>
+                        <div style="border: 1px solid var(--text);"></div>
+                        <div class="div d-flex justify-content-between align-items-baseline">
+                            <div class="d-flex align-items-baseline">
+                                <h1 class="textColor">2.</h1>
+                                <h3 class="ms-3">Tata Matilda</h3>
+                            </div>
+                            <h6>+39 123 45678</h6>
                         </div>
-                        <div class="col-12 col-md-4">
-                            <h1 class="textColor">OUTFIT</h1>
-                            <h5>
-                                Sconsigliamo alle donne di indossare tacchi sottili ed eccessivamente alti. 
-                            </h5>
+                        <div style="border: 1px solid var(--text);"></div>
+                        <div class="div d-flex justify-content-between align-items-baseline">
+                            <div class="d-flex align-items-baseline">
+                                <h1 class="textColor">3.</h1>
+                                <h3 class="ms-3">Tata Matilda</h3>
+                            </div>
+                            <h6>+39 123 45678</h6>
+                        </div>
+                        <div style="border: 1px solid var(--text);"></div>
+                        <div class="div d-flex justify-content-between align-items-baseline">
+                            <div class="d-flex align-items-baseline">
+                                <h1 class="textColor">4.</h1>
+                                <h3 class="ms-3">Tata Matilda</h3>
+                            </div>
+                            <h6>+39 123 45678</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 pe-0 me-0 textColor">
+                    <div class="cardBlock pb-3">
+                        <div class="mb-4 circleNumber">02</div>
+                        <h1 class="textColor titlesFontB mb-3">DOG-SITTER</h1>
+                        <div class="div d-flex justify-content-between align-items-baseline">
+                            <div class="d-flex align-items-baseline">
+                                <h1 class="textColor">1.</h1>
+                                <h3 class="ms-3">Tata Matilda</h3>
+                            </div>
+                            <h6>+39 123 45678</h6>
+                        </div>
+                        <div style="border: 1px solid var(--text);"></div>
+                        <div class="div d-flex justify-content-between align-items-baseline">
+                            <div class="d-flex align-items-baseline">
+                                <h1 class="textColor">2.</h1>
+                                <h3 class="ms-3">Tata Matilda</h3>
+                            </div>
+                            <h6>+39 123 45678</h6>
+                        </div>
+                        <div style="border: 1px solid var(--text);"></div>
+                        <div class="div d-flex justify-content-between align-items-baseline">
+                            <div class="d-flex align-items-baseline">
+                                <h1 class="textColor">3.</h1>
+                                <h3 class="ms-3">Tata Matilda</h3>
+                            </div>
+                            <h6>+39 123 45678</h6>
+                        </div>
+                        <div style="border: 1px solid var(--text);"></div>
+                        <div class="div d-flex justify-content-between align-items-baseline">
+                            <div class="d-flex align-items-baseline">
+                                <h1 class="textColor">4.</h1>
+                                <h3 class="ms-3">Tata Matilda</h3>
+                            </div>
+                            <h6>+39 123 45678</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-md-3 mt-4 d-flex row w-100 justify-content-center">
+                <div class="col-12 col-md-6 pe-0 me-0 textColor mb-4 mb-md-0">
+                    <div class="cardBlock pb-3 ">
+                        <div class="mb-4 circleNumber">03</div>
+                        <h1 class="textColor titlesFontB mb-3">PARRUCCHIERI</h1>
+                        <div class="div d-flex justify-content-between align-items-end h-100">
+                            <div class="d-flex align-items-baseline">
+                                <h1 class="textColor">1.</h1>
+                                <h3 class="ms-3">Tata Matilda</h3>
+                            </div>
+                            <div class="d-flex flex-column ">
+                                <h6 class="lh-1">P.za S. Rocco 6 – Faenza</h6>
+                                <h6 class="lh-1 text-end">+39 123 45678</h6>
+                            </div>
+                        </div>
+                        <div style="border: 1px solid var(--text);"></div>
+                        
+                        <div class="div d-flex justify-content-between align-items-end h-100">
+                            <div class="d-flex align-items-baseline">
+                                <h1 class="textColor">2.</h1>
+                                <h3 class="ms-3">Tata Matilda</h3>
+                            </div>
+                            <div class="d-flex flex-column ">
+                                <h6 class="lh-1">P.za S. Rocco 6 – Faenza</h6>
+                                <h6 class="lh-1 text-end">+39 123 45678</h6>
+                            </div>
+                        </div>
+                        <div style="border: 1px solid var(--text);"></div>
+                        
+                        <div class="div d-flex justify-content-between align-items-end h-100">
+                            <div class="d-flex align-items-baseline">
+                                <h1 class="textColor">3.</h1>
+                                <h3 class="ms-3">Tata Matilda</h3>
+                            </div>
+                            <div class="d-flex flex-column ">
+                                <h6 class="lh-1">P.za S. Rocco 6 – Faenza</h6>
+                                <h6 class="lh-1 text-end">+39 123 45678</h6>
+                            </div>
+                        </div>
+                        <div style="border: 1px solid var(--text);"></div>
+                        
+                        <div class="div d-flex justify-content-between align-items-end h-100">
+                            <div class="d-flex align-items-baseline">
+                                <h1 class="textColor">4.</h1>
+                                <h3 class="ms-3">Tata Matilda</h3>
+                            </div>
+                            <div class="d-flex flex-column ">
+                                <h6 class="lh-1">P.za S. Rocco 6 – Faenza</h6>
+                                <h6 class="lh-1 text-end">+39 123 45678</h6>
+                            </div>
                         </div>
                         
                     </div>
-                    <div class="mt-5 d-flex row w-100">
-                        <div class="col-12 col-md-6 textColor">
-                            <div class="cardBlock pb-3">
-                                <div class="mb-4 circleNumber">01</div>
-                                <h1 class="textColor titlesFontB mb-3">BABY-SITTER</h1>
-                                <div class="div d-flex justify-content-between align-items-baseline">
-                                    <div class="d-flex align-items-baseline">
-                                        <h1 class="textColor">1.</h1>
-                                        <h3 class="ms-3">Tata Matilda</h3>
-                                    </div>
-                                    <h6>+39 123 45678</h6>
-                                </div>
-                                <div style="border: 1px solid var(--text);"></div>
-                                <div class="div d-flex justify-content-between align-items-baseline">
-                                    <div class="d-flex align-items-baseline">
-                                        <h1 class="textColor">2.</h1>
-                                        <h3 class="ms-3">Tata Matilda</h3>
-                                    </div>
-                                    <h6>+39 123 45678</h6>
-                                </div>
-                                <div style="border: 1px solid var(--text);"></div>
-                                <div class="div d-flex justify-content-between align-items-baseline">
-                                    <div class="d-flex align-items-baseline">
-                                        <h1 class="textColor">3.</h1>
-                                        <h3 class="ms-3">Tata Matilda</h3>
-                                    </div>
-                                    <h6>+39 123 45678</h6>
-                                </div>
-                                <div style="border: 1px solid var(--text);"></div>
-                                <div class="div d-flex justify-content-between align-items-baseline">
-                                    <div class="d-flex align-items-baseline">
-                                        <h1 class="textColor">4.</h1>
-                                        <h3 class="ms-3">Tata Matilda</h3>
-                                    </div>
-                                    <h6>+39 123 45678</h6>
-                                </div>
+                </div>
+                <div class="col-12 col-md-6 pe-0 me-0 textColor">
+                    <div class="cardBlock pb-3 ">
+                        <div class="mb-4 circleNumber">04</div>
+                        <h1 class="textColor titlesFontB mb-3">ESTETISTI</h1>
+                        <div class="div d-flex justify-content-between align-items-end h-100">
+                            <div class="d-flex align-items-baseline">
+                                <h1 class="textColor">1.</h1>
+                                <h3 class="ms-3">Tata Matilda</h3>
+                            </div>
+                            <div class="d-flex flex-column ">
+                                <h6 class="lh-1">P.za S. Rocco 6 – Faenza</h6>
+                                <h6 class="lh-1 text-end">+39 123 45678</h6>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 textColor">
-                            <div class="cardBlock pb-3">
-                                <div class="mb-4 circleNumber">02</div>
-                                <h1 class="textColor titlesFontB mb-3">DOG-SITTER</h1>
-                                <div class="div d-flex justify-content-between align-items-baseline">
-                                    <div class="d-flex align-items-baseline">
-                                        <h1 class="textColor">1.</h1>
-                                        <h3 class="ms-3">Tata Matilda</h3>
-                                    </div>
-                                    <h6>+39 123 45678</h6>
-                                </div>
-                                <div style="border: 1px solid var(--text);"></div>
-                                <div class="div d-flex justify-content-between align-items-baseline">
-                                    <div class="d-flex align-items-baseline">
-                                        <h1 class="textColor">2.</h1>
-                                        <h3 class="ms-3">Tata Matilda</h3>
-                                    </div>
-                                    <h6>+39 123 45678</h6>
-                                </div>
-                                <div style="border: 1px solid var(--text);"></div>
-                                <div class="div d-flex justify-content-between align-items-baseline">
-                                    <div class="d-flex align-items-baseline">
-                                        <h1 class="textColor">3.</h1>
-                                        <h3 class="ms-3">Tata Matilda</h3>
-                                    </div>
-                                    <h6>+39 123 45678</h6>
-                                </div>
-                                <div style="border: 1px solid var(--text);"></div>
-                                <div class="div d-flex justify-content-between align-items-baseline">
-                                    <div class="d-flex align-items-baseline">
-                                        <h1 class="textColor">4.</h1>
-                                        <h3 class="ms-3">Tata Matilda</h3>
-                                    </div>
-                                    <h6>+39 123 45678</h6>
-                                </div>
+                        <div style="border: 1px solid var(--text);"></div>
+                        
+                        <div class="div d-flex justify-content-between align-items-end h-100">
+                            <div class="d-flex align-items-baseline">
+                                <h1 class="textColor">2.</h1>
+                                <h3 class="ms-3">Tata Matilda</h3>
+                            </div>
+                            <div class="d-flex flex-column ">
+                                <h6 class="lh-1">P.za S. Rocco 6 – Faenza</h6>
+                                <h6 class="lh-1 text-end">+39 123 45678</h6>
                             </div>
                         </div>
-                    </div>
-                    <div class="mt-4 d-flex row w-100">
-                        <div class="col-12 col-md-6 textColor">
-                            <div class="cardBlock pb-3 ">
-                                <div class="mb-4 circleNumber">03</div>
-                                <h1 class="textColor titlesFontB mb-3">PARRUCCHIERI</h1>
-                                <div class="div d-flex justify-content-between align-items-end h-100">
-                                    <div class="d-flex align-items-baseline">
-                                        <h1 class="textColor">1.</h1>
-                                        <h3 class="ms-3">Tata Matilda</h3>
-                                    </div>
-                                    <div class="d-flex flex-column ">
-                                        <h6 class="lh-1">P.za S. Rocco 6 – Faenza</h6>
-                                        <h6 class="lh-1 text-end">+39 123 45678</h6>
-                                    </div>
-                                </div>
-                                <div style="border: 1px solid var(--text);"></div>
-                                
-                                <div class="div d-flex justify-content-between align-items-end h-100">
-                                    <div class="d-flex align-items-baseline">
-                                        <h1 class="textColor">2.</h1>
-                                        <h3 class="ms-3">Tata Matilda</h3>
-                                    </div>
-                                    <div class="d-flex flex-column ">
-                                        <h6 class="lh-1">P.za S. Rocco 6 – Faenza</h6>
-                                        <h6 class="lh-1 text-end">+39 123 45678</h6>
-                                    </div>
-                                </div>
-                                <div style="border: 1px solid var(--text);"></div>
-                                
-                                <div class="div d-flex justify-content-between align-items-end h-100">
-                                    <div class="d-flex align-items-baseline">
-                                        <h1 class="textColor">3.</h1>
-                                        <h3 class="ms-3">Tata Matilda</h3>
-                                    </div>
-                                    <div class="d-flex flex-column ">
-                                        <h6 class="lh-1">P.za S. Rocco 6 – Faenza</h6>
-                                        <h6 class="lh-1 text-end">+39 123 45678</h6>
-                                    </div>
-                                </div>
-                                <div style="border: 1px solid var(--text);"></div>
-                                
-                                <div class="div d-flex justify-content-between align-items-end h-100">
-                                    <div class="d-flex align-items-baseline">
-                                        <h1 class="textColor">4.</h1>
-                                        <h3 class="ms-3">Tata Matilda</h3>
-                                    </div>
-                                    <div class="d-flex flex-column ">
-                                        <h6 class="lh-1">P.za S. Rocco 6 – Faenza</h6>
-                                        <h6 class="lh-1 text-end">+39 123 45678</h6>
-                                    </div>
-                                </div>
-                                
+                        <div style="border: 1px solid var(--text);"></div>
+                        
+                        <div class="div d-flex justify-content-between align-items-end h-100">
+                            <div class="d-flex align-items-baseline">
+                                <h1 class="textColor">3.</h1>
+                                <h3 class="ms-3">Tata Matilda</h3>
+                            </div>
+                            <div class="d-flex flex-column ">
+                                <h6 class="lh-1">P.za S. Rocco 6 – Faenza</h6>
+                                <h6 class="lh-1 text-end">+39 123 45678</h6>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 textColor">
-                            <div class="cardBlock pb-3 ">
-                                <div class="mb-4 circleNumber">04</div>
-                                <h1 class="textColor titlesFontB mb-3">ESTETISTI</h1>
-                                <div class="div d-flex justify-content-between align-items-end h-100">
-                                    <div class="d-flex align-items-baseline">
-                                        <h1 class="textColor">1.</h1>
-                                        <h3 class="ms-3">Tata Matilda</h3>
-                                    </div>
-                                    <div class="d-flex flex-column ">
-                                        <h6 class="lh-1">P.za S. Rocco 6 – Faenza</h6>
-                                        <h6 class="lh-1 text-end">+39 123 45678</h6>
-                                    </div>
-                                </div>
-                                <div style="border: 1px solid var(--text);"></div>
-                                
-                                <div class="div d-flex justify-content-between align-items-end h-100">
-                                    <div class="d-flex align-items-baseline">
-                                        <h1 class="textColor">2.</h1>
-                                        <h3 class="ms-3">Tata Matilda</h3>
-                                    </div>
-                                    <div class="d-flex flex-column ">
-                                        <h6 class="lh-1">P.za S. Rocco 6 – Faenza</h6>
-                                        <h6 class="lh-1 text-end">+39 123 45678</h6>
-                                    </div>
-                                </div>
-                                <div style="border: 1px solid var(--text);"></div>
-                                
-                                <div class="div d-flex justify-content-between align-items-end h-100">
-                                    <div class="d-flex align-items-baseline">
-                                        <h1 class="textColor">3.</h1>
-                                        <h3 class="ms-3">Tata Matilda</h3>
-                                    </div>
-                                    <div class="d-flex flex-column ">
-                                        <h6 class="lh-1">P.za S. Rocco 6 – Faenza</h6>
-                                        <h6 class="lh-1 text-end">+39 123 45678</h6>
-                                    </div>
-                                </div>
-                                <div style="border: 1px solid var(--text);"></div>
-                                
-                                <div class="div d-flex justify-content-between align-items-end h-100">
-                                    <div class="d-flex align-items-baseline">
-                                        <h1 class="textColor">4.</h1>
-                                        <h3 class="ms-3">Tata Matilda</h3>
-                                    </div>
-                                    <div class="d-flex flex-column ">
-                                        <h6 class="lh-1">P.za S. Rocco 6 – Faenza</h6>
-                                        <h6 class="lh-1 text-end">+39 123 45678</h6>
-                                    </div>
-                                </div>
-                                
+                        <div style="border: 1px solid var(--text);"></div>
+                        
+                        <div class="div d-flex justify-content-between align-items-end h-100">
+                            <div class="d-flex align-items-baseline">
+                                <h1 class="textColor">4.</h1>
+                                <h3 class="ms-3">Tata Matilda</h3>
+                            </div>
+                            <div class="d-flex flex-column ">
+                                <h6 class="lh-1">P.za S. Rocco 6 – Faenza</h6>
+                                <h6 class="lh-1 text-end">+39 123 45678</h6>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
-
-            <div class="w-100 mt-5 d-flex justify-content-center">
-                <div style="max-width: 70%;">
-                    <h4 class="text-center textFont">
-                        <b>PS:</b> Per qualsiasi altra richiesta, scrivici qui: <b><u>*******</u></b>
-                    </h4>
-                </div>
-            </div>
-            
         </div>
-        <div class="end"></div>
+
+        <div class="w-100 mt-5 d-flex justify-content-center">
+            <div style="max-width: 70%;">
+                <h4 class="text-center textFont">
+                    <b>PS:</b> Per qualsiasi altra richiesta, scrivici qui: <b><u>*******</u></b>
+                </h4>
+            </div>
+        </div>
+        
     </div>
+    <div class="end"></div>
     <footer>
         <div class="w-100 d-flex justify-content-center align-items-center gap-3">
             <h2>Giulia</h2>
@@ -259,5 +274,20 @@
             <h2>Luca</h2>
         </div>
     </footer>
+
+    <script>
+        function toggleVisibility() {
+            var hiddenContent = document.querySelector(".mobHead");
+            if (hiddenContent.style.visibility === "hidden") {
+                hiddenContent.style.opacity = 1;
+                hiddenContent.style.visibility = "visible";
+                hiddenContent.style.display = "block";
+            } else {
+                hiddenContent.style.opacity = 0;
+                hiddenContent.style.visibility = "hidden";
+                hiddenContent.style.display = "none";
+            }
+        }
+        </script>
 </body>
 </html>
