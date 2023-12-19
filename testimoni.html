@@ -14,72 +14,41 @@
     swiper-container {
       width: 100%;
       height: auto;
-      aspect-ratio: 8/3;
+      aspect-ratio: 6/3 !important;
     }
 
-    @media only screen and (max-width: 720px) {
-        swiper-container {
-            aspect-ratio: 8/7;
-        }
-    }
+    .news-Slide-up {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
 
-    .newsCaption {
-        position: absolute;
-        top: auto;
-        text-align: center;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 90%;
-        border-top: 2px solid var(--text);
-        background: rgba( 255, 255, 255, 0.25 );
-        backdrop-filter: blur( 40px );
-        -webkit-backdrop-filter: blur( 4px );
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
-        padding: 15px;
-        -webkit-transform: translateY(80%);
-                transform: translateY(80%);
-        -webkit-backface-visibility: hidden;
-                backface-visibility: hidden;
-        -webkit-transition: opacity 0.1s 0.3s, -webkit-transform 0.4s;
-        transition: opacity 0.1s 0.3s, -webkit-transform 0.4s;
-        transition: transform 0.4s, opacity 0.1s 0.3s;
-        transition: transform 0.4s, opacity 0.1s 0.3s, -webkit-transform 0.4s;
-    }
+.news-Slide-up img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
 
-    .newsCaption-title {
-        margin-top: 0px;
-    }
+.news-Slide-up img.image-2 {
+    opacity: 0;
+}
 
-    .newsCaption-content {
-        margin: 0;
-    }
+.news-Slide-up:hover img.image-1 {
+    opacity: 0;
+}
 
-    .newsCaption-link {
-        color: #fff;
-        text-decoration: underline;
-        opacity: .8;
-        -webkit-transition-property: opacity;
-        transition-property: opacity;
-        -webkit-transition-duration: 0.15s;
-                transition-duration: 0.15s;
-        -webkit-transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
-                transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
-    }
-    .newsCaption-link:hover {
-        opacity: 0.65;
-    }
-
-    .news-Slide-up:hover .newsCaption {
-        -webkit-transform: translateY(0px);
-                transform: translateY(0px);
-        -webkit-transition: opacity 0.1s, -webkit-transform 0.4s;
-        transition: opacity 0.1s, -webkit-transform 0.4s;
-        transition: transform 0.4s, opacity 0.1s;
-        transition: transform 0.4s, opacity 0.1s, -webkit-transform 0.4s;
-    }
+.news-Slide-up:hover img.image-2 {
+    opacity: 1;
+}
 
     swiper-slide img {
+        border-radius: 1rem;
       display: block;
       width: 100%;
       height: 100%;
@@ -97,9 +66,9 @@
             <div class="dropdown">
                 <button class="dropbtn fs-5 textFont">Info</button>
                 <div class="dropdown-content">
-                    <a href="./info1.html" class="text-center textFont">Info 1</a>
-                    <a href="./info2.html" class="text-center textFont">Info 2</a>
-                    <a href="./info3.html" class="text-center textFont">Info 3</a>
+                    <a href="./info1.html" class="text-center textFont">Indicazioni stradali</a>
+                    <a href="./info2.html" class="text-center textFont">Alloggi e navette</a>
+                    <a href="./info3.html" class="text-center textFont">Altre informazioni</a>
                 </div>
             </div>
             <div class="fs-5 textFont"><a href="./testimoni.html"><u>Testimoni</u></a></div>
@@ -116,72 +85,65 @@
             <div class="fs-1 textFont" style="color: #fff;"><a href="./index.html">Home</div></a>
             <div class="fs-1 textFont" style="color: #fff;"><a href="./programma.html">Programma</a></div>
             <div class="fs-1 textFont" style="color: #fff;"><a href="./rsvp.html">RSVP</a></div>
-            <div class="fs-1 textFont" style="color: #fff;"><a href="./info1.html">Info 1</a></div>
-            <div class="fs-1 textFont" style="color: #fff;"><a href="./info2.html">Info 2</a></div>
-            <div class="fs-1 textFont" style="color: #fff;"><a href="./info3.html">Info 3</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./info1.html">Indicazioni stradali</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./info2.html">Alloggi e navette</a></div>
+            <div class="fs-1 textFont" style="color: #fff;"><a href="./info3.html">Altre informazioni</a></div>
             <div class="fs-1 textFont" style="color: #fff;"><a href="./testimoni.html"><u>Testimoni</u></a></div>
             <div class="fs-1 textFont" style="color: #fff;"><a href="./viaggio.html">Viaggio di nozze</a></div>
         </div>
     </div>
     <div class="px-3 pt-3">
-        <div class="mainHome mt-5">
+        <div class="d-flex justify-content-center">
+            <img src="./assets/images/Sito G_L/Supereroi_page-0001.jpg" style="max-width: 40vw;">
+        </div>
+        <div class="mainHome">
             <div class="d-flex flex-column text-center titlesFont titlesColor">
                 <h1 class="titlesFont">Ad ogni coppia felice, i suoi <span class="titlesFontB">Supereroi!</span></h1>
             </div>
         </div>
     </div>
-
-    <div class="vw-100">
-        <div style="aspect-ratio: 2/1;">
-        <img src="./assets/images/Group 12.png" class="fitImg"></div>
-    </div>
-    
     <div class="px-5 pt-3 ">
 
             <div class="mt-5 d-flex flex-column justify-content-center titlesColor text-center textColor">
                 <h1 class="textColor">Team Sposa</h1>
-                <h5 class="d-flex justify-content-center titlesColor text-center textColor">
-                    <div style="max-width:60%;">
-                        <h5><i>
-                            Non sono una signora!
-                        </i></h5>
-                    </div>
-                </h5>
             </div>
 
             <div>
-                <swiper-container class="mySwiper" scrollbar-hide="true" autoplay-delay="5000" autoplay-disable-on-interaction="false" loop="true"  grab-cursor="true">
+                <swiper-container class="mySwiper"  autoplay-delay="10000" loop="true"  grab-cursor="true">
                     <swiper-slide>
                         <div class="news-Slide-up">
-                            <img src="./assets/images/Couple_2.jpeg" />
-                            <div class="newsCaption">
-                                <h1 class="newsCaption-title textColor lh-1">Giovanna</h1>
-                                <p class="newsCaption-content textColor mt-4">
-                                    Blurb to get reader hooked.
-                                </p>
-                            </div>
+                            <img src="./assets/images/Sito G_L/inv1.png" class="image-1" />
+                            <img src="./assets/images/Sito G_L/inv1.1.png" class="image-2" />
                         </div>
                     </swiper-slide>
                     <swiper-slide>
                         <div class="news-Slide-up">
-                            <img src="./assets/images/Couple_2.jpeg" />
-                            <div class="newsCaption">
-                                <h1 class="newsCaption-title textColor lh-1">Giovanna</h1>
-                                <p class="newsCaption-content textColor mt-4">
-                                    Blurb to get reader hooked.
-                                </p>
-                            </div>
+                            <img src="./assets/images/Sito G_L/inv2.png" class="image-1" />
+                            <img src="./assets/images/Sito G_L/inv2.2.png" class="image-2" />
                         </div>
                     </swiper-slide>
                     <swiper-slide>
                         <div class="news-Slide-up">
-                            <img src="./assets/images/Couple_2.jpeg" />
-                            <div class="newsCaption">
-                                <h1 class="newsCaption-title textColor lh-1">Giovanna</h1>
-                                <p class="newsCaption-content textColor mt-4">
-                                    Blurb to get reader hooked.
-                                </p>
-                            </div>
+                            <img src="./assets/images/Sito G_L/inv3.png" class="image-1" />
+                            <img src="./assets/images/Sito G_L/inv3.3.png" class="image-2" />
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="news-Slide-up">
+                            <img src="./assets/images/Sito G_L/inv4.png" class="image-1" />
+                            <img src="./assets/images/Sito G_L/inv4.4.png" class="image-2" />
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="news-Slide-up">
+                            <img src="./assets/images/Sito G_L/inv5.png" class="image-1" />
+                            <img src="./assets/images/Sito G_L/inv5.5.png" class="image-2" />
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="news-Slide-up">
+                            <img src="./assets/images/Sito G_L/inv6.png" class="image-1" />
+                            <img src="./assets/images/Sito G_L/inv6.6.png" class="image-2" />
                         </div>
                     </swiper-slide>
                 </swiper-container>
@@ -189,13 +151,6 @@
 
             <div class="mt-5 d-flex flex-column justify-content-center titlesColor text-center textColor">
                 <h1 class="textColor">Team Sposo</h1>
-                <h5 class="d-flex justify-content-center titlesColor text-center textColor">
-                    <div style="max-width:60%;">
-                        <h5><i>
-                            Non sono un signore!
-                        </i></h5>
-                    </div>
-                </h5>
             </div>
 
             <div>
