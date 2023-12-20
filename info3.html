@@ -10,7 +10,7 @@
     <link href="./css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="d-none d-md-block px-5 pt-3">
+    <div class="d-none d-md-block px-5 py-3 fixed-top" style="background-color: #fff; border-bottom: 1px solid #561E12;">
         <div class="d-none d-md-flex titlesColor header w-100 justify-content-between">
             <div class="fs-5 textFont"><a href="./index.html">Home</div></a>
             <div class="fs-5 textFont"><a href="./programma.html">Programma</a></div>
@@ -27,9 +27,26 @@
             <div class="fs-5 textFont"><a href="./viaggio.html">Viaggio di nozze</a></div>
         </div>
     </div>
-    <div class="d-block d-md-none py-3 px-3" style="border-bottom: 1px solid #561E12;">
-        <div class="d-flex w-100 justify-content-center align-items-center" onclick="toggleVisibility()">
-            <img src="./assets/images/icons/menu.svg" >
+    <div class="d-block d-md-none py-3 px-3 fixed-top" style="background-color: #fff; border-bottom: 1px solid #561E12;">
+        <div class="d-flex w-100 justify-content-between align-items-center">
+            <div>
+                <a href="./index.html">
+                    <img src="./assets/images/Sito G_L/smallLogo2.png" style="max-height: 25px;">
+                </a>
+            </div>
+            <div onclick="toggleVisibility()">
+                <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="40" onclick="this.classList.toggle('active')">
+                    <path
+                        class="line top"
+                        d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                    <path
+                        class="line middle"
+                        d="m 30,50 h 40" />
+                    <path
+                        class="line bottom"
+                        d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                </svg>
+            </div>
         </div>
     </div>
     <div class="position-asbolute mobHead top-0">
@@ -44,6 +61,8 @@
             <div class="fs-1 textFont" style="color: #fff;"><a href="./viaggio.html">Viaggio di nozze</a></div>
         </div>
     </div>
+    <div style="height: 2rem;"></div>
+
     <div class="d-flex justify-content-center mt-5">
         <img src="./assets/images/Sito G_L/Librone_page-0001.jpg" style="max-height: 30vh;">
     </div>
@@ -293,25 +312,33 @@
         <div class="w-100 mt-5 d-flex justify-content-center">
             <div style="max-width: 70%;">
                 <h4 class="text-center textFont">
-                    <b>PS:</b> Per qualsiasi altra richiesta, scrivici qui: <b><u>*******</u></b>
+                    <b>PS:</b> Per qualsiasi altra richiesta, scrivici qui: <b><a href = "mailto: giuliluca2024@gmail.com"><u>giuliluca2024@gmail.com</u></a></b>
                 </h4>
             </div>
         </div>
         
     </div>
     <div class="end"></div>
-    <footer>
-        <div class="w-100 d-flex justify-content-center align-items-center gap-3">
-            <h2>Giulia</h2>
-            <img src="./assets/images/footerDog.png" style="max-height: 20vh;">
-            <h2>Luca</h2>
+    <footer style="border-top: 1px solid #561E12;" class="py-3">
+        <div class="w-100 d-flex gap-3 justify-content-center flex-column text-center">
+            <div class="d-flex justify-content-center">
+                <div style="max-width: 40vw; height: auto;">
+                    <img src="./assets/images/Sito G_L/smallLogo2.png" class="fitImg" style="object-fit: contain;">
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="fs-5 textFont" style="letter-spacing: .5rem;">
+                    29 - 06 - 2024
+                </div>
+            </div>
+            <img src="./assets/images/Sito G_L/footerDog.png" style="max-height: 10vh; object-fit: contain;" class="fitImg">
         </div>
     </footer>
 
     <script>
         function toggleVisibility() {
             var hiddenContent = document.querySelector(".mobHead");
-            if (hiddenContent.style.visibility === "hidden") {
+            if (hiddenContent.style.visibility === "hidden" || hiddenContent.style.visibility === "") {
                 hiddenContent.style.opacity = 1;
                 hiddenContent.style.visibility = "visible";
                 hiddenContent.style.display = "block";
@@ -321,6 +348,6 @@
                 hiddenContent.style.display = "none";
             }
         }
-        </script>
+    </script>
 </body>
 </html>

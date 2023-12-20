@@ -10,26 +10,43 @@
     <link href="./css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="d-none d-md-block px-5 pt-3">
+    <div class="d-none d-md-block px-5 py-3 fixed-top" style="background-color: #fff; border-bottom: 1px solid #561E12;">
         <div class="d-none d-md-flex titlesColor header w-100 justify-content-between">
-            <div class="fs-5 textFont"><a href="./index.html">Home</div></a>
-            <div class="fs-5 textFont"><a href="./programma.html">Programma</a></div>
-            <div class="fs-5 textFont"><a href="./rsvp.html">RSVP</a></div>
+            <div class="fs-5 textFont lh-1"><a href="./index.html">Home</div></a>
+            <div class="fs-5 textFont lh-1"><a href="./programma.html">Programma</a></div>
+            <div class="fs-5 textFont lh-1"><a href="./rsvp.html">RSVP</a></div>
             <div class="dropdown">
-                <button class="dropbtn fs-5 textFont">Info</button>
+                <button class="dropbtn fs-5 textFont lh-1">Info</button>
                 <div class="dropdown-content">
                     <a href="./info1.html" class="text-center textFont"><u>Indicazioni stradali</u></a>
                     <a href="./info2.html" class="text-center textFont">Alloggi e navette</a>
                     <a href="./info3.html" class="text-center textFont">Altre informazioni</a>
                 </div>
             </div>
-            <div class="fs-5 textFont"><a href="./testimoni.html">Testimoni</a></div>
-            <div class="fs-5 textFont"><a href="./viaggio.html">Viaggio di nozze</a></div>
+            <div class="fs-5 textFont lh-1"><a href="./testimoni.html">Testimoni</a></div>
+            <div class="fs-5 textFont lh-1"><a href="./viaggio.html">Viaggio di nozze</a></div>
         </div>
     </div>
-    <div class="d-block d-md-none py-3 px-3" style="border-bottom: 1px solid #561E12;">
-        <div class="d-flex w-100 justify-content-center align-items-center" onclick="toggleVisibility()">
-            <img src="./assets/images/icons/menu.svg" >
+    <div class="d-block d-md-none py-3 px-3 fixed-top" style="background-color: #fff; border-bottom: 1px solid #561E12;">
+        <div class="d-flex w-100 justify-content-between align-items-center">
+            <div>
+                <a href="./index.html">
+                    <img src="./assets/images/Sito G_L/smallLogo2.png" style="max-height: 25px;">
+                </a>
+            </div>
+            <div onclick="toggleVisibility()">
+                <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="40" onclick="this.classList.toggle('active')">
+                    <path
+                        class="line top"
+                        d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                    <path
+                        class="line middle"
+                        d="m 30,50 h 40" />
+                    <path
+                        class="line bottom"
+                        d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                </svg>
+            </div>
         </div>
     </div>
     <div class="position-asbolute mobHead top-0">
@@ -44,6 +61,7 @@
             <div class="fs-1 textFont" style="color: #fff;"><a href="./viaggio.html">Viaggio di nozze</a></div>
         </div>
     </div>
+    <div style="height: 2rem;"></div>
     <div class="px-md-5 px-2">
         <div class="mainHome mt-5">
             <div class="d-flex flex-column text-center titlesFont titlesColor">
@@ -63,25 +81,18 @@
                         </div>
                         <div class="col-md-6 col-12">
                             <div class="lh-sm">
-                                Consigliamo di atterrare all’aeroporto <b>G. Marconi di Bologna.</b> Una volta atterrati, è possibile:<br>
-                                <li>Noleggiare una macchina presso uno degli autonoleggi dell’aeroporto e raggiungere <b>Brisighella</b> - tempo stimato: <b>1 ora</b>; oppure</li>
-                                <li>Prendere il treno <b>Marconi Express</b> che collega l’aeroporto con la stazione ferroviaria di Bologna Centrale – tempo stimato: <b>10 minuti</b> (poi segui le istruzioni nella sezione «Treno»); </li>
-            
-                                È anche possibile atterrare presso <b>l’Aeroporto di Firenze</b> e poi: <br>
-                                <li>Noleggiare una macchina presso uno degli autonoleggi dell’aeroporto e raggiungere <b>Brisighella</b> – tempo stimato: <b>2 ore e 30 minuti</b>; oppure</li>
-                                <li>Prendere il treno fino alla stazione ferroviaria di <b>Bologna Centrale</b> – tempo stimato:<b> 40 minuti</b> (poi segui le istruzioni nella sezione «Treno»); </li>
-            
-                                È ulteriormente possibile atterrare presso gli <b>Aeroporti di Milano</b> (Linate, Malpensa o Bergamo Orio al Serio) e poi: <br>
-                                <li>Noleggiare una macchina presso uno degli autonoleggi dell’aeroporto e raggiungere <b>Brisighella</b> – tempo stimato: <b>3 ore e 30 minuti</b>; </li>
-                                <li>Prendere il treno Frecciarossa o Italo fino alla stazione ferroviaria di <b>Bologna Centrale</b> – tempo stimato: <b>1 ora</b> (poi segui le istruzioni nella sezione «Treno»). </li>
+                                Consigliamo di atterrare all’aeroporto <b>G. Marconi</b> di Bologna oppure, in alternativa, all’Aeroporto di <b>Firenze</b> o in uno degli Aeroporti di <b>Milano</b> (Linate, Malpensa o Bergamo). 
+                                Una volta atterrati, è possibile alternativamente:<br>
+                                Noleggiare una macchina fino a <b>Brisighella</b>; 
+                                Prendere il treno fino alla stazione di <b>Bologna Centrale</b> (poi segui le istruzioni nella sezione «Treno»). 
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="cardBlock mb-4">
                     <div class="d-flex row align-items-center">
-                        <div class="col-md-6 col-12 mb-3">
-                            <div class="w-100 d-flex gap-5 justify-content-between justify-content-md-center align-items-center">
+                        <div class="col-md-6 col-12">
+                            <div class="w-100 h-100 mb-3 mb-md-0 d-flex gap-5 justify-content-between justify-content-md-center align-items-center">
                                 <h1 class="textColor titlesFontB text-center">Treno</h1>
                                 <img src="./assets/images/Sito G_L/Icona treno_page-0001.png" style="max-width: 10vw; max-height: 10vh; width: auto;" alt="">
                             </div>
@@ -95,8 +106,8 @@
                 </div>
                 <div class="cardBlock mb-4">
                     <div class="d-flex row align-items-center">
-                        <div class="col-md-6 col-12 mb-3">
-                            <div class="w-100 d-flex gap-5 justify-content-between justify-content-md-center align-items-center">
+                        <div class="col-md-6 col-12 mb-3 mb-md-0">
+                            <div class="col-md-6 col-12 w-100 h-100 d-flex gap-5 justify-content-between justify-content-md-center align-items-center">
                                 <h1 class="textColor titlesFontB text-center">Macchina</h1>
                                 <img src="./assets/images/Sito G_L/Icona macchina_page-0001.png" style="max-width: 10vw; max-height: 10vh; width: auto;" alt="">
                             </div> 
@@ -113,7 +124,7 @@
             <div class="w-100 mt-5 d-flex justify-content-center">
                 <div style="max-width: 80%;">
                     <h4 class="text-center textColor">
-                        <b>PS:</b> Se hai qualche giorno di vacanza prima o dopo il matrimonio, trovi <b><u>qui</u></b> qualche suggerimento per rendere la tua visita ancor più piacevole!
+                        <b>PS:</b> Se hai qualche giorno di vacanza prima o dopo il matrimonio, trovi <b><u><a href="https://emiliaromagnaturismo.it" target="_blank">qui</a></u></b> e <u><b><a href="https://www.cappellacciamerenda.it/2021/03/09/cosa-vedere-a-brisighella/" target="_blank">qui</a></b></u> qualche suggerimento per rendere la tua visita ancor più piacevole!
                     </h4>
                 </div>
             </div>
@@ -121,18 +132,26 @@
         </div>
         <div class="end"></div>
     </div>
-    <footer>
-        <div class="w-100 d-flex justify-content-center align-items-center gap-3">
-            <h2>Giulia</h2>
-            <img src="./assets/images/footerDog.png" style="max-height: 20vh;">
-            <h2>Luca</h2>
+    <footer style="border-top: 1px solid #561E12;" class="py-3">
+        <div class="w-100 d-flex gap-3 justify-content-center flex-column text-center">
+            <div class="d-flex justify-content-center">
+                <div style="max-width: 40vw; height: auto;">
+                    <img src="./assets/images/Sito G_L/smallLogo2.png" class="fitImg" style="object-fit: contain;">
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="fs-5 textFont" style="letter-spacing: .5rem;">
+                    29 - 06 - 2024
+                </div>
+            </div>
+            <img src="./assets/images/Sito G_L/footerDog.png" style="max-height: 10vh; object-fit: contain;" class="fitImg">
         </div>
     </footer>
 
     <script>
         function toggleVisibility() {
             var hiddenContent = document.querySelector(".mobHead");
-            if (hiddenContent.style.visibility === "hidden") {
+            if (hiddenContent.style.visibility === "hidden" || hiddenContent.style.visibility === "") {
                 hiddenContent.style.opacity = 1;
                 hiddenContent.style.visibility = "visible";
                 hiddenContent.style.display = "block";
@@ -142,6 +161,6 @@
                 hiddenContent.style.display = "none";
             }
         }
-        </script>
+    </script>
 </body>
 </html>

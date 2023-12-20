@@ -10,8 +10,8 @@
     <link href="./css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="d-none d-md-block px-5 pt-3">
-        <div class="d-none d-md-flex titlesColor header w-100 justify-content-between">
+    <div class="d-none d-md-block px-5 py-3 fixed-top" style="background-color: #fff; border-bottom: 1px solid #561E12;">
+        <div class="d-none d-md-flex titlesColor w-100 justify-content-between">
             <div class="fs-5 textFont"><a href="./index.html">Home</div></a>
             <div class="fs-5 textFont"><a href="./programma.html"><u>Programma</u></a></div>
             <div class="fs-5 textFont"><a href="./rsvp.html">RSVP</a></div>
@@ -27,9 +27,26 @@
             <div class="fs-5 textFont"><a href="./viaggio.html">Viaggio di nozze</a></div>
         </div>
     </div>
-    <div class="d-block d-md-none py-3 px-3" style="border-bottom: 1px solid #561E12;">
-        <div class="d-flex w-100 justify-content-center align-items-center" onclick="toggleVisibility()">
-            <img src="./assets/images/icons/menu.svg" >
+    <div class="d-block d-md-none py-3 px-3 fixed-top" style="background-color: #fff; border-bottom: 1px solid #561E12;">
+        <div class="d-flex w-100 justify-content-between align-items-center">
+            <div>
+                <a href="./index.html">
+                    <img src="./assets/images/Sito G_L/smallLogo2.png" style="max-height: 25px;">
+                </a>
+            </div>
+            <div onclick="toggleVisibility()">
+                <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="40" onclick="this.classList.toggle('active')">
+                    <path
+                        class="line top"
+                        d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                    <path
+                        class="line middle"
+                        d="m 30,50 h 40" />
+                    <path
+                        class="line bottom"
+                        d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                </svg>
+            </div>
         </div>
     </div>
     <div class="position-asbolute mobHead top-0">
@@ -44,16 +61,18 @@
             <div class="fs-1 textFont" style="color: #fff;"><a href="./viaggio.html">Viaggio di nozze</a></div>
         </div>
     </div>
+    <div style="height: 3rem;"></div>
 
-    <div class="mainHome mt-5">
-        <div class="d-flex justify-content-center titlesFont">
-            <h1 class="titlesFontB"><b>Pronti alla Maratona?</b></h1>
-        </div>
+    <div class="d-none d-md-block" style="height: 60vh; width: 100vw;">
+        <img src="./assets/images/Sito G_L/WhatsApp Image 2023-09-11 at 12.23.30.jpeg" class="fitImg">
     </div>
+    <img src="./assets/images/Sito G_L/WhatsApp Image 2023-09-11 at 12.23.30.jpeg" class="d-block d-md-none" style="height: auto; width: 100vw; object-fit: contain;">
 
     <div class="px-5 pt-3">
-
-        <div class="mt-5 d-flex justify-content-center">
+        <div class=" my-3 d-flex justify-content-center titlesFont">
+            <h1 class="titlesFontB">Pronti alla Maratona?</h1>
+        </div>
+        <div class="d-flex justify-content-center">
             <div class="col-12 col-md-6 textColor">
                 <div class="cardBlock position-relative pb-3" style="background-color: #fff;">
                     <div class="position-absolute m-3 top-0 start-0 mb-4 circleNumber d-flex align-items-center justify-content-center"><img src="./assets/images/icons/clock-hour-5.svg" style="width: 50%;"></div>
@@ -62,31 +81,45 @@
                         Sabato 29 giugno 2024<br>
                         Borgo Fregnano<br>
                         Via Baccagnano 37 - Brisighella<br>
-    
                     </h3>
                 </div>
             </div>
         </div>
-        <div class="end"></div>
 
-    </div>
-    <div class="vw-100" style="margin-top: -5rem; z-index: -10;">
-        <div style="aspect-ratio: 2/1;">
-        <img src="./assets/images/Group 12.png" class="fitImg"></div>
+        <!-- <div class="my-3">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2682.7504741681846!2d11.778436811544331!3d44.18652857096129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132b469678e440dd%3A0xeb02989fd85965f5!2sVia%20Baccagnano%2C%2037%2C%2048013%20Brisighella%20RA!5e1!3m2!1sit!2sit!4v1703066393352!5m2!1sit!2sit" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div> -->
     </div>
 
-    <footer>
-        <div class="w-100 d-flex justify-content-center align-items-center gap-3">
+    <div class="mt-3">
+        <img src="./assets/images/Sito G_L/wedding_Map.png" class="fitImg">
+    </div>
+    
+    <footer style="border-top: 1px solid #561E12;" class="py-3">
+        <div class="w-100 d-flex gap-3 justify-content-center flex-column text-center">
+            <div class="d-flex justify-content-center">
+                <div style="max-width: 40vw; height: auto;">
+                    <img src="./assets/images/Sito G_L/smallLogo2.png" class="fitImg" style="object-fit: contain;">
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="fs-5 textFont" style="letter-spacing: .5rem;">
+                    29 - 06 - 2024
+                </div>
+            </div>
+            <img src="./assets/images/Sito G_L/footerDog.png" style="max-height: 10vh; object-fit: contain;" class="fitImg">
+        </div>
+        <!-- <div class="w-100 d-flex justify-content-center align-items-center gap-3">
             <h2>Giulia</h2>
             <img src="./assets/images/footerDog.png" style="max-height: 20vh;">
             <h2>Luca</h2>
-        </div>
+        </div> -->
     </footer>
 
     <script>
         function toggleVisibility() {
             var hiddenContent = document.querySelector(".mobHead");
-            if (hiddenContent.style.visibility === "hidden") {
+            if (hiddenContent.style.visibility === "hidden" || hiddenContent.style.visibility === "") {
                 hiddenContent.style.opacity = 1;
                 hiddenContent.style.visibility = "visible";
                 hiddenContent.style.display = "block";
@@ -96,6 +129,6 @@
                 hiddenContent.style.display = "none";
             }
         }
-        </script>
+    </script>
 </body>
 </html>
