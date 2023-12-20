@@ -96,6 +96,10 @@ img {
     transform: rotateY(180deg);
 }
 
+.flippedColor {
+    background-color: var(--text);
+}
+
 .front, .back {
     backface-visibility: hidden;
 }
@@ -124,6 +128,17 @@ img {
 .circleNumber{
     background-color: var(--text);
     color: #fff;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circleNumberBack {
+    background-color: #fff;
+    color: var(--text);
     width: 2rem;
     height: 2rem;
     border-radius: 999px;
