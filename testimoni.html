@@ -7,6 +7,7 @@
     <title>Informazioni - Giulia&Luca</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💍</text></svg>">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="./css/swiper.min.css" rel="stylesheet" type="text/css">
     <link href="./css/style.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -34,17 +35,16 @@
         transition: opacity 0.3s ease-in-out;
     }
 
-    .news-Slide-up img.image-2 {
+    /* .news-Slide-up img.image-2 {
         opacity: 0;
     }
 
-    .news-Slide-up:hover img.image-1 {
         opacity: 0;
     }
 
     .news-Slide-up:hover img.image-2 {
         opacity: 1;
-    }
+    } */
 
     swiper-slide {
         aspect-ratio: 1/1;
@@ -141,82 +141,70 @@
     
     <div class="px-3">
         <div class="d-none d-md-block">
-            <swiper-container class="mySwiper" autoplay-delay="10000" loop="true" grab-cursor="true" space-between="30"
-            slides-per-view="3">
+            <swiper-container navigation="true" class="mySwiper" autoplay-delay="10000" loop="true" grab-cursor="true" space-between="30"
+            slides-per-view="3" >
                 <swiper-slide>
                     <div class="news-Slide-up">
-                        <img src="./assets/images/Sito G_L/inv1.png" class="image-1" />
                         <img src="./assets/images/Sito G_L/inv1.1.png" class="image-2" />
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="news-Slide-up">
-                        <img src="./assets/images/Sito G_L/inv2.png" class="image-1" />
                         <img src="./assets/images/Sito G_L/inv2.2.png" class="image-2" />
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="news-Slide-up">
-                        <img src="./assets/images/Sito G_L/inv3.png" class="image-1" />
                         <img src="./assets/images/Sito G_L/inv3.3.png" class="image-2" />
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="news-Slide-up">
-                        <img src="./assets/images/Sito G_L/inv4.png" class="image-1" />
                         <img src="./assets/images/Sito G_L/inv4.4.png" class="image-2" />
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="news-Slide-up">
-                        <img src="./assets/images/Sito G_L/inv5.png" class="image-1" />
                         <img src="./assets/images/Sito G_L/inv5.5.png" class="image-2" />
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="news-Slide-up">
-                        <img src="./assets/images/Sito G_L/inv6.png" class="image-1" />
                         <img src="./assets/images/Sito G_L/inv6.6.png" class="image-2" />
                     </div>
                 </swiper-slide>
             </swiper-container>
         </div>
         <div class="d-block d-md-none">
-            <swiper-container class="mySwiper" autoplay-delay="10000" loop="true" grab-cursor="true" space-between="30"
+            <swiper-container navigation="true" class="mySwiper" autoplay-delay="10000" loop="true" grab-cursor="true" space-between="30"
             slides-per-view="1">
                 <swiper-slide>
                     <div class="news-Slide-up">
-                        <img src="./assets/images/Sito G_L/inv1.png" class="image-1" />
                         <img src="./assets/images/Sito G_L/inv1.1.png" class="image-2" />
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="news-Slide-up">
-                        <img src="./assets/images/Sito G_L/inv2.png" class="image-1" />
                         <img src="./assets/images/Sito G_L/inv2.2.png" class="image-2" />
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="news-Slide-up">
-                        <img src="./assets/images/Sito G_L/inv3.png" class="image-1" />
                         <img src="./assets/images/Sito G_L/inv3.3.png" class="image-2" />
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="news-Slide-up">
-                        <img src="./assets/images/Sito G_L/inv4.png" class="image-1" />
                         <img src="./assets/images/Sito G_L/inv4.4.png" class="image-2" />
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="news-Slide-up">
-                        <img src="./assets/images/Sito G_L/inv5.png" class="image-1" />
                         <img src="./assets/images/Sito G_L/inv5.5.png" class="image-2" />
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="news-Slide-up">
-                        <img src="./assets/images/Sito G_L/inv6.png" class="image-1" />
                         <img src="./assets/images/Sito G_L/inv6.6.png" class="image-2" />
                     </div>
                 </swiper-slide>
@@ -232,82 +220,70 @@
 
     <div class="px-3">
         <div class="d-none d-md-block">
-            <swiper-container class="mySwiper" autoplay-delay="10000" loop="true" grab-cursor="true" space-between="30"
-            slides-per-view="3">
+            <swiper-container navigation="true" class="mySwiper" autoplay-delay="10000" loop="true" grab-cursor="true" space-between="30"
+            slides-per-view="3" >
                 <swiper-slide>
                     <div class="news-Slide-up">
-                        <img src="./assets/images/Sito G_L/anv1.png" class="image-1" />
                         <img src="./assets/images/Sito G_L/anv1.1.png" class="image-2" />
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="news-Slide-up">
-                        <img src="./assets/images/Sito G_L/anv2.png" class="image-1" />
                         <img src="./assets/images/Sito G_L/anv2.2.png" class="image-2" />
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="news-Slide-up">
-                        <img src="./assets/images/Sito G_L/anv3.png" class="image-1" />
                         <img src="./assets/images/Sito G_L/anv3.3.png" class="image-2" />
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="news-Slide-up">
-                        <img src="./assets/images/Sito G_L/anv4.png" class="image-1" />
                         <img src="./assets/images/Sito G_L/anv4.4.png" class="image-2" />
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="news-Slide-up">
-                        <img src="./assets/images/Sito G_L/anv5.png" class="image-1" />
                         <img src="./assets/images/Sito G_L/anv5.5.png" class="image-2" />
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="news-Slide-up">
-                        <img src="./assets/images/Sito G_L/anv6.png" class="image-1" />
                         <img src="./assets/images/Sito G_L/anv6.6.png" class="image-2" />
                     </div>
                 </swiper-slide>
             </swiper-container>
         </div>
         <div class="d-block d-md-none">
-            <swiper-container class="mySwiper" autoplay-delay="10000" loop="true" grab-cursor="true" space-between="30"
+            <swiper-container navigation="true" class="mySwiper" autoplay-delay="10000" loop="true" grab-cursor="true" space-between="30"
             slides-per-view="1">
                 <swiper-slide>
                     <div class="news-Slide-up">
-                        <img src="./assets/images/Sito G_L/anv1.png" class="image-1" />
                         <img src="./assets/images/Sito G_L/anv1.1.png" class="image-2" />
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="news-Slide-up">
-                        <img src="./assets/images/Sito G_L/anv2.png" class="image-1" />
                         <img src="./assets/images/Sito G_L/anv2.2.png" class="image-2" />
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="news-Slide-up">
-                        <img src="./assets/images/Sito G_L/anv3.png" class="image-1" />
                         <img src="./assets/images/Sito G_L/anv3.3.png" class="image-2" />
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="news-Slide-up">
-                        <img src="./assets/images/Sito G_L/anv4.png" class="image-1" />
                         <img src="./assets/images/Sito G_L/anv4.4.png" class="image-2" />
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="news-Slide-up">
-                        <img src="./assets/images/Sito G_L/anv5.png" class="image-1" />
                         <img src="./assets/images/Sito G_L/anv5.5.png" class="image-2" />
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="news-Slide-up">
-                        <img src="./assets/images/Sito G_L/anv6.png" class="image-1" />
                         <img src="./assets/images/Sito G_L/anv6.6.png" class="image-2" />
                     </div>
                 </swiper-slide>

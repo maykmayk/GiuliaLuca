@@ -41,6 +41,7 @@ a {
 }
 
 :root {
+    --swiper-theme-color: #fff !important;
     --titles: #A23B26;
     --text: #561E12;
 }
@@ -297,4 +298,8 @@ img {
 
 .ratio1 {
     aspect-ratio: 1/1;
+}
+
+div.swiper-button-next, .swiper-button-prev {
+    color: #fff !important;
 }
