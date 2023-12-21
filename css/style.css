@@ -82,17 +82,31 @@ img {
 
 /*  */
 
-.card-container {
+.front {
+    color: var(--text);
+    background-color: #fff;
+    border-radius: 1rem;
+    border: 2px solid var(--text);
+}
+
+.back {
+    color: #fff;
+    background-color: var(--text);
+    border-radius: 1rem;
+    border: 2px solid var(--text);
+}
+
+.cardz-container {
     perspective: 500px;
 }
 
 .flipped {
     transform: rotateY(180deg);
 }
-
+/* 
 .flippedColor {
     background-color: var(--text);
-}
+} */
 
 .front, .back {
     backface-visibility: hidden;
@@ -102,12 +116,9 @@ img {
     transform: rotateY(180deg);
 }
 
-.card {
-    border-radius: 1rem !important;
+.cardz {
     transition: transform 0.7s;
     transform-style: preserve-3d;
-    border: 2px solid var(--text);
-    color: #fff;
     width: 100%;
     aspect-ratio: 451/300;
 }

@@ -109,8 +109,8 @@
                 </div>
                 <div class="row gap-md-0 gap-2 mt-5 textColor">
                     <div class="col-md-4 col-12">
-                        <div class="card-container textFont" onclick="rotateCard()" style="line-height: 92.736%;">
-                            <div class="card">
+                        <div class="cardz-container textFont" onclick="rotateCard()" style="line-height: 92.736%;">
+                            <div class="cardz">
                                 <div class="front p-3 h-100 w-100 d-flex flex-column align-items-start">
                                     <div class="mb-auto circleNumber">01</div>
                                     <h1 class="lh-1 textColor">Il nostro primo viaggio insieme?</h1>
@@ -123,8 +123,8 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-12">
-                        <div class="card-container textFont" onclick="rotateCard()" style="line-height: 92.736%;">
-                            <div class="card">
+                        <div class="cardz-container textFont" onclick="rotateCard()" style="line-height: 92.736%;">
+                            <div class="cardz">
                                 <div class="front p-3 h-100 w-100 d-flex flex-column align-items-start">
                                     <div class="mb-auto circleNumber">02</div>
                                     <h1 class="lh-1 textColor">Qual è il nostro nido d'amore?</h1>
@@ -137,8 +137,8 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-12">
-                        <div class="card-container textFont" onclick="rotateCard()" style="line-height: 92.736%;">
-                            <div class="card">
+                        <div class="cardz-container textFont" onclick="rotateCard()" style="line-height: 92.736%;">
+                            <div class="cardz">
                                 <div class="front p-3 h-100 w-100 d-flex flex-column align-items-start">
                                     <div class="mb-auto circleNumber">03</div>
                                     <h1 class="lh-1 textColor">Chi ha scelto il nome "Ipa"?</h1>
@@ -154,8 +154,8 @@
                 <div class="row gap-2 mt-md-4 mt-2">
                     <div class="col-2 d-none d-md-block"></div>
                     <div class="col-md-4 col-12">
-                        <div class="card-container textFont" onclick="rotateCard()" style="line-height: 92.736%;">
-                            <div class="card">
+                        <div class="cardz-container textFont" onclick="rotateCard()" style="line-height: 92.736%;">
+                            <div class="cardz">
                                 <div class="front p-3 h-100 w-100 d-flex flex-column align-items-start">
                                     <div class="mb-auto circleNumber">04</div>
                                     <h1 class="lh-1 textColor">Qual è il nostro soprannome?</h1>
@@ -168,8 +168,8 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-12">
-                        <div class="card-container textFont" onclick="rotateCard()" style="line-height: 92.736%;">
-                            <div class="card">
+                        <div class="cardz-container textFont" onclick="rotateCard()" style="line-height: 92.736%;">
+                            <div class="cardz">
                                 <div class="front p-3 h-100 w-100 d-flex flex-column align-items-start">
                                     <div class="mb-auto circleNumber">05</div>
                                     <h1 class="lh-1 textColor">A quali animali pensiamo di assomigliare?</h1>
@@ -209,19 +209,16 @@
     function rotateCard(event) {
         // Verifica se l'evento e l'evento.currentTarget sono definiti
         if (event && event.currentTarget) {
-            var card = event.currentTarget.querySelector(".card");
+            var card = event.currentTarget.querySelector(".cardz");
             // Verifica se la carta è definita prima di tentare di accedere alla sua classe
             if (card) {
                 card.classList.toggle("flipped");
-                setTimeout(() => {
-                    card.classList.toggle("flippedColor");
-                }, 300);
             }
         }
     }
 
     // Aggiungi event listeners a tutte le carte
-    document.querySelectorAll(".card-container").forEach(function (container) {
+    document.querySelectorAll(".cardz-container").forEach(function (container) {
         container.addEventListener("click", rotateCard);
     });
     function toggleVisibility() {
