@@ -86,12 +86,6 @@ img {
     perspective: 500px;
 }
 
-.card {
-    border-radius: 1rem !important;
-    transition: transform 0.7s;
-    transform-style: preserve-3d;
-}
-
 .flipped {
     transform: rotateY(180deg);
 }
@@ -109,6 +103,9 @@ img {
 }
 
 .card {
+    border-radius: 1rem !important;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
     border: 2px solid var(--text);
     color: #fff;
     width: 100%;

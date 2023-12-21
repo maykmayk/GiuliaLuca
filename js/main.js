@@ -39,7 +39,7 @@ submitButton.addEventListener("click", (e) => {
         });
 
     //alert
-    alert("Your Form Has Been Submitted Successfully");
+    alert("Grazie per la proposta!");
 
     //clear form after submission
     function clearForm() {
