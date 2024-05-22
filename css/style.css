@@ -15,12 +15,14 @@
 
 @font-face {
     font-family: "TitlesReg";
-    src: url("../assets/fonts/TT\ Ramillas\ Trial\ Regular.ttf");
+    /* src: url("../assets/fonts/TT\ Ramillas\ Trial\ Regular.ttf"); */
+    src: url("../assets/fonts/Platypi-VariableFont_wght.ttf");
 }
 
 @font-face {
     font-family: "TitlesBold";
-    src: url("../assets/fonts/TT\ Ramillas\ Trial\ Bold.ttf");
+    /* src: url("../assets/fonts/TT\ Ramillas\ Trial\ Bold.ttf"); */
+    src: url("../assets/fonts/Platypi-VariableFont_wght.ttf");
 }
 
 a {
